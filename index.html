@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>PROG1700 (Sanchen Zhang) - Final Project</title>
+</head>
+<body>
+  <div class="main">
+    <form id="left">
+        <label for="countries" class="list-country">Choose a country from the list:</label>
+        <select name="countryName" id="countries">
+          <option value="" >Select one</option>
+        </select>
+    </form>
+    
+    <form id="right">
+        <h2>country Info:</h2>
+        <div id="country-info">
+        <p class="name"></p>
+        <img id="countryFlag" alt="countryFlag" src="defult.png">
+        </div>
+        <label for="population">Population:</label>
+        <input type="text" id="population">
+        <div id="area">
+          <label class="arin">Area In:</label>
+          <select id="sizeCountry">
+            <option value="mile">Sq.Miles</option>
+            <option value="km">Sq.KM</option>
+          </select>
+          <input type="text" name="Sq.Miles" id="size">
+        </div>
+        <div class="country-info">
+          <label >Population Density:</label>
+          <div class="square">
+            <input type="radio" id="sm" name="unit" value="psm"></input>
+            <label for="sm">Per Square Mile</label>
+            <br>
+            <input type="radio"id="km" name="unit" value="pkm"></input>
+            <label for="km">Per Square KM</label>
+          </div>
+          <input type="text" name="" id="sq">
+        </div>
+        <div id="popuWorld">
+          <label>Percentage of World Population:</label>
+          <input type="text" class="percentageOfWorld">
+        </div>
+    </form>
+  </div>
+  <div class="button">
+      <button class="btn">Wiki Country</button>
+      <button class="btn" id="quiz">Launch Quiz</button>
+    </div>
+    <script type="module" src="script.js"></script> 
+</body>
+</html>

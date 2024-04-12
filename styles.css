@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: rgb(79, 79, 176);
+}
+.main {
+    display: flex;
+    gap:50px;
+    padding:20px;
+    
+    color: azure;
+}
+
+#left {
+    width: 300px;
+}
+
+#right {
+    width: 800px;
+}
+
+#left, #population, #area{
+    display: flex;
+    flex-direction: column;
+   
+} 
+
+.list-country {
+    margin-bottom: 10px;
+}
+
+#country-info {
+    max-width: 100%;
+    height:250px;;
+    margin: 20px 0;
+}
+
+#population ,#area, #sq{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.arin {
+    margin-bottom: 10px;
+}
+.country-info {
+    margin-top: 10px;
+    line-height: 1.5rem;
+    border: 1px white solid;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#popuWorld {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 360px;
+    gap:20px
+}
+button {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+button:hover {
+    cursor: pointer;
+    background-color:blue;
+    color: azure;
+}
+
+.quiz {
+    color:blue
+}
+
+a{
+    text-decoration: none;
+}
+

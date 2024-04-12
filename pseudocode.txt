@@ -1,0 +1,4 @@
+1. give the script an type attribute as module;
+2. use Import to get the data from json file and store in a variable named countries;
+3. then loop through countries array and get eacn object key Name;
+4. then add those names to the select element as options;
