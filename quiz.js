@@ -1,4 +1,4 @@
-import countries from './countries.json' assert {type: 'json'};
+import countries from './countries.json' with { type: 'json' };
 
 // call the function when page is loaded
 window.onload = function () {
@@ -8,13 +8,22 @@ window.onload = function () {
 
 const countryFlag = document.querySelector('.image');
 const options = document.querySelector('#question');
-//create a function to get the random country flag
+
 let currentCountryName;
-function getRandomCountryFlag () {
-    const randomIndex = Math.floor(Math.random() * countries.length);//get a random number 
+
+function getRandomCountryFlag() {
+    const randomIndex = Math.floor(Math.random() * countries.length);
     currentCountryName = countries[randomIndex].Name;
-    countryFlag.setAttribute('src','/flags/'+currentCountryName.replaceAll(' ','_')+'.png');
+    
+    // Check if countryFlag exists before setting its src attribute
+    if (countryFlag) {
+        const flagSrc = '/flags/' + currentCountryName.replace(/ /g, '_') + '.png';
+        countryFlag.setAttribute('src', flagSrc);
+    } else {
+        console.error('countryFlag element not found');
+    }
 }
+
 
 function random () {
     return Math.floor(Math.random()*countries.length);
