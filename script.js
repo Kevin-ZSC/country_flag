@@ -20,7 +20,7 @@ function DisplayCountryData(selectCountryData) {
     const quiz = document.querySelector('#quiz');
     countryPopulation.value = selectCountryData.Population; //get the select country population
     countrySize.value = selectCountryData.Area; //get the select country size
-    flagCountry.setAttribute('src', './flags/' + currentCountryName.replace(/ /g, '_') + '.png');//give the img src attribute to get matched country flag
+    flagCountry.setAttribute('src', './flags/' + selectCountryData.Name.replace(/ /g, '_') + '.png');//give the img src attribute to get matched country flag
     
     //add eventlister for the country size select element
     const countryS = document.querySelector('#sizeCountry');
