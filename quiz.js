@@ -17,7 +17,7 @@ function getRandomCountryFlag() {
     
     // Check if countryFlag exists before setting its src attribute
     if (countryFlag) {
-        const flagSrc = 'https://github.com/Kevin-ZSC/country_flag/edit/main/flags/' + currentCountryName.replace(/ /g, '_') + '.png';
+        const flagSrc = './flags/' + currentCountryName.replace(/ /g, '_') + '.png';
         countryFlag.setAttribute('src', flagSrc);
     } else {
         console.error('countryFlag element not found');
